@@ -1,0 +1,349 @@
+
+@font-face {
+    font-family: vazir;
+    src: url(/font/Vazir.eot);
+    src: url(/font/Vazir.ttf),
+    url(/font/Vazir.woff),
+    url(/font/Vazir.woff2);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    background-color: #222222;
+    direction: rtl;
+    font-family: vazir;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+#main-bar{
+    display: block;
+    width: 100%;
+}
+
+
+nav ul{
+    list-style-type: none;
+    overflow: hidden;
+}
+
+nav ul li{
+    display: inline;
+
+}
+
+nav ul li:last-child{
+    float: left;
+    margin-left: 20px;
+}
+
+nav ul li a{
+    background-color: #222222;
+    margin: 20px 20px;
+    padding: 5px;
+    text-decoration: none;
+    border: 1px hidden;
+    color: #ffffff;
+}
+nav ul a:hover{
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 10px;
+}
+
+.preview-sec{
+    margin: 20px 0px 60px 0px;
+    text-align: center;
+    border: 1px solid #666666;
+    background-color: rgb(205, 192, 13);
+    border-radius: 5px;
+    padding: 10px;
+    color: #000000;
+}
+
+#button-preview{
+    position:relative;
+    cursor: pointer;
+}
+
+
+#right-menu{
+    display: block;
+}
+
+#menu-element{
+    position: fixed;
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #ffff00;
+    border: none;
+    color: #000000;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+}
+button span{
+    font-family: vazir;
+}
+
+button#menu-element:hover{
+    background-color: #ffffff;
+}
+
+#menu{
+    display: none;
+    position:fixed;
+    background-color: #ffffff;
+    color: #000000;
+    border:1px solid #dddddd;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+#menu h3{
+    background-color: #ffff00;
+    color: #000;
+    padding: 0px;
+    width: 100%;
+}
+
+#back-menu{
+    border: 2px dotted #000;
+    border-radius: 5px;
+    background-color: #ffff00;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 3px;
+    margin-right: 15px;
+}
+
+#back-menu:hover{
+    background-color: #eeeeee;
+}
+
+#menu ul{
+    list-style-type:none;
+    padding: 0;
+    margin: 0;
+    border: 1px hidden;
+    border-radius: 5px;
+    overflow:auto; 
+    max-height: 260px;
+    max-width: 200px;
+}
+
+#menu ul li{
+    padding: 5px;
+    margin:0px ;
+    cursor: grab;
+    border: 1px hidden;
+    border-radius: 5px;
+    background-color: #cccccc;
+    color: #000;
+    opacity: 1;
+}
+
+#menu ul li:hover{
+    background-color: #f0f0f0;
+    color: #000000;
+    border-radius: 5px;
+}
+
+#info-button{
+    border: 1px hidden;
+    border-radius: 60px;
+    font-size: 25px;
+    margin: 20px;
+    padding: 20px 30px; 
+    position: fixed;
+    display: block;
+    cursor: pointer;
+    background-color: #0095ff;
+    color: #ffffff;
+}
+
+#information{
+    display: none;
+    border: 1px solid #f0f0f0;
+    background-color: #0095ff;
+    color: #fff;
+    position: fixed;
+    border-radius: 5px;
+    text-align: justify;
+    direction: rtl;
+    padding-left: 20px;
+    margin: 20px;
+    width: fit-content;
+    height: fit-content;
+    font-family: vazir;
+}
+
+#back-info{
+    direction: rtl;
+    border: 1px dashed #000;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px 0;
+    background-color: #0095ff;
+    font-size: large;
+    cursor: pointer;
+}
+
+#back-info:hover{
+    background-color: #f0f0f0;
+}
+
+
+
+#form-container{
+    text-align: center;
+    color: #000000;
+    margin: auto;
+    border: 1px solid #888888;
+    border-radius: 5px;
+    background-color: #ffffff;
+    width: 50%;
+    height: 50%;
+}
+
+.drag-drop{
+    border: 1px dashed #aaaaaa;
+    border-radius: 30px;
+    background-color: #cccccc;
+    padding: 20px;
+    color: #444444;
+    transition: all 0.3s ease;
+    min-height: 100px;
+
+}
+
+
+#submit-done{
+    border: 2px hidden;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #ffff00;
+    color: #000000;
+    padding: 15px;
+    margin: 8px;
+    font-family: vazir;
+    text-align: center;
+    cursor: pointer;
+}
+
+#submit-done:hover{
+    background-color: #eeeeee;
+    border: 1px solid #000000;
+}
+
+.comman-style{
+    border: 1px solid #222222;
+    border-radius: 5px;
+    margin: 5px 0;
+    padding: 8px 5px 8px 0;
+    width: 100%;
+    height: 100%;
+    color: #000;
+    background-color: #fff;
+    font-family: vazir;
+    font-size: 19px;
+    text-align: right;
+    cursor: grab;
+}
+
+.box-title{
+    background-color: #fff;
+    border: hidden;
+    color: #000;
+    font-family: vazir;
+    font-size: 15px;
+    padding: 8px;
+    margin: 8px;
+    width: auto;
+}
+
+.box-date{
+    padding:8px;
+    margin:8px;
+}
+
+.box-email{
+    padding: 8px;
+    margin: 8px;
+    font-family: vazir;
+    font-size: 15px;
+    border: hidden;
+    border-radius: 5px;
+    width: auto;
+}
+
+.box-image{
+    cursor: pointer;
+    padding: 8px;
+    margin: 8px;
+    width: auto;
+}
+
+.box-text{
+    font-family: vazir;
+    font-size: 12px;
+    padding: 5px;
+    margin: 8px;
+    text-align: justify;
+    width: auto;
+}
+
+.box-phone{
+    padding: 8px;
+    margin: 8px;
+    font-family: vazir;
+    font-size: 14px;
+    border: hidden;
+    width: auto;
+}
+
+
+#the-end{
+    font-family: vazir;
+    text-align: center;
+    margin: 15px;
+}
+
+#the-end a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#line-end{
+    border-color: #ffff00;
+    margin-top: 60px;
+}
+
+mark{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+textarea{
+    resize: vertical;
+}
+
+@media screen and (max-width : 768px){
+    body{
+        font-size: 13px;
+    }
+
+    nav ul li a{
+        margin: 0;
+        padding: 0px 8px;
+    }
+
+}
+

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fa-IR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/main_style.css">
+    <title> جت فرم | مرجع تخصصی ساخت فرم</title>
+
+</head>
+<body>
+    <div id="main-bar">
+        <nav>
+            <ul>
+                <li><a href="/" title="home" id="home-image">Jet Form</a></li>
+                <li><a href="jet-form_myform" title="my form">فرم های من</a></li>
+                <li><a href="jet-form_blog" title="blog" target="_blank">وبلاگ</a></li>
+                <li><a href="jet-form_about" title="about us">درباره ما</a></li>
+                <li><a href="jet-form_sign-up" title="sign up">ثبت نام</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="preview-sec">
+        <input type="checkbox" id="button-preview">
+        <label for="button-preview">پیش نمایش فرم</label>
+    </div>
+
+
+    <div id="right-menu">
+        <button type="button" id="menu-element">
+            <span>اضافه کردن عنصر</span>
+        </button>
+        <div id="menu">
+            <h3>
+                عناصر فرم
+                <button type="button" id="back-menu">&larr;</button>
+            </h3>
+            <ul>
+                <li value="عنوان" draggable="true">عنوان</li><br>
+                <li value="تاریخ" draggable="true">تاریخ</li><br>
+                <li value="ایمیل" draggable="true">ایمیل</li><br>
+                <li value="تصویر" draggable="true">تصویر</li><br>
+                <li value="متن" draggable="true">متن</li><br>
+                <li value="شماره تلفن" draggable="true">شماره تلفن</li><br>
+            </ul>
+        </div>
+    </div>
+
+    <div dir="ltr">
+        <button type="button" id="info-button">؟</button>
+        <pre id="information">
+            <button type="button" id="back-info">&#9747;</button>
+            شما می توانید با استفاده از دکمه 
+            <b style="color: #000;">اضافه کردن عنصر</b>
+            به باکس مربوطه فرم خود را طراحی کنید.
+            در ضمن جهت حذف عناصر روی آنها
+            دو بار کلیک کرده و همچنین می توانید
+            آنها را جا به جا کنید.
+        </pre>
+    </div>
+
+    <div id="form-container">
+        <h2>فرم</h2>
+        <hr>
+        <form class="drag-drop" id="ex-fild-drop">
+            عناصر را اینجا قرار دهید
+        </form>
+        <hr>
+        <button type="submit" id="submit-done">تایید</button>
+    </div>
+
+    <hr id="line-end">
+
+    <footer id="the-end">
+        <strong>
+            با <mark>جت فرم</mark> خیالت راحت ...
+        </strong>
+        <h3>
+            ساخته شده توسط: رضا وظیفه دوست
+        </h3>
+        <p>
+            <a href="mailto:rezavzifedost@gmail.com" target="_blank" title="ارتباط با ما">ارتباط با ما</a>
+        </p>
+    </footer>
+
+
+    <script src="/script/main.js">
+    </script>
+
+
+
+</body>
+</html>

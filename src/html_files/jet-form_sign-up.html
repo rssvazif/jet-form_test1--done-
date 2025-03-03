@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fa-IR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/sign_up.css">
+    <title>جت فرم | ثبت نام</title>
+</head>
+<body>
+    <div id="main-bar">
+        <nav>
+            <ul>
+                <li><a href="/" title="home" id="home-image">Jet Form</a></li>
+                <li><a href="jet-form_myform" title="my form">فرم های من</a></li>
+                <li><a href="jet-form_blog" title="blog" target="_blank">وبلاگ</a></li>
+                <li><a href="jet-form_about" title="about us">درباره ما</a></li>
+                <li><a href="jet-form_sign-up" title="sign up">ثبت نام</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="preview-sec"></div>
+
+
+    <div id="box_sign">
+        <form action="">
+            <label for="name">نام: </label>
+            <input type="text" name="name" class="input-style empty" id="user"><br>
+            <label for="lname">نام خانوادگی:</label>
+            <input type="text" name="lname" class="input-style empty" ><br>
+            <label for="email">ایمیل:</label>
+            <input type="email" name="email" class="input-style empty" ><br>
+            <label for="sex">جنسیت:</label>
+            <input type="radio" name="sex" class="gender-box empty" checked>مرد
+            <input type="radio" name="sex" class="gender-box empty" >زن
+            <br>
+            <label for="education">تحصیلات:</label>
+            <select name="education" id="select-bar" class="empty">
+                <option value="دیپلم">دیپلم</option>
+                <option value="لیسانس" >لیسانس</option>
+                <option value="فوق لیسانس">فوق لیسانس</option>
+                <option value="دکترا">دکترا</option>
+            </select>
+            <br>
+            <label for="age">سن:</label>
+            <input type="number" name="age" class="input-style empty">
+
+        </form>
+        <hr>
+        <button type="submit" id="submit-done"> ثبت</button>
+    </div>
+
+
+
+
+    <hr id="line-end">
+
+    <footer id="the-end">
+        <strong>
+            با <mark>جت فرم</mark> خیالت راحت ...
+        </strong>
+        <h3>
+            ساخته شده توسط: رضا وظیفه دوست
+        </h3>
+        <p>
+            <a href="mailto:rezavzifedost@gmail.com" target="_blank" title="ارتباط با ما">ارتباط با ما</a>
+        </p>
+    </footer>
+
+
+    <script>
+        const submit = document.getElementById('submit-done');
+        const user = document.getElementById('user');
+
+        submit.addEventListener('click',(ev)=>{
+            ev.preventDefault();
+            alert("اطلاعات ذخیره شد.");
+            document.getElementById('box_sign').innerHTML = `<strong>${user.value}</strong> به جت فرم خوش آمدی. `;
+        });
+    </script>
+</body>
+</html>

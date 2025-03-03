@@ -1,0 +1,117 @@
+
+@font-face {
+    font-family: vazir;
+    src: url(/font/Vazir.eot);
+    src: url(/font/Vazir.ttf),
+    url(/font/Vazir.woff),
+    url(/font/Vazir.woff2);
+}
+
+
+body{
+    background-color: #222222;
+    direction: rtl;
+    font-family: vazir;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+#main-bar{
+    display: block;
+}
+
+
+nav ul{
+    list-style-type: none;
+    overflow: hidden;
+}
+
+nav ul li{
+    display: inline;
+}
+
+nav ul li:last-child{
+    float: left;
+    margin-left: 20px;
+}
+
+nav ul li a{
+    background-color: #222222;
+    margin: 20px 20px;
+    padding: 5px;
+    text-decoration: none;
+    border: 1px hidden;
+    color: #ffffff;
+}
+nav ul a:hover{
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 10px;
+}
+
+.preview-sec{
+    margin: 20px auto;
+    text-align: center;
+    border: 1px solid #666666;
+    background-color: rgb(205, 192, 13);
+    border-radius: 5px;
+    padding: 10px;
+    color: #000000;
+}
+
+#the-end{
+    font-family: vazir;
+    text-align: center;
+    margin: 15px;
+}
+
+#the-end a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#line-end{
+    border-color: #ffff00;
+}
+
+mark{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#text-blog{
+    text-align: center;
+    border: 1px inset #454500;
+    background-color: #bbbbbb;
+    border-radius: 10px;
+    width: 50%;
+    height:fit-content;
+    margin:auto;
+    padding:50px;
+}
+
+h1 ,pre{
+    text-align: center;
+    font-family: vazir;
+    color: #000000;
+}
+
+h1{
+    font-size: 40px;
+}
+
+pre{
+    font-size: 20px;
+}
+
+@media screen and (max-width : 768px){
+    body{
+        font-size: 13px;
+    }
+
+    nav ul li a{
+        margin: 0;
+        padding: 0px 8px;
+    }
+}
